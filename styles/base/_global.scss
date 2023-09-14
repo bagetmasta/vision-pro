@@ -1,6 +1,7 @@
 @import "node_modules/modern-normalize/modern-normalize.css";
 
-.container {
+.container-wrapper {
+  position: relative;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -23,6 +24,42 @@
     width: 1320px;
   }
 }
+
+.container-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: -83%;
+  left: 0;
+  background: url("/images/header/portrait.png") no-repeat right / contain;
+}
+
+// .container {
+//   position: relative; /* Это нужно, чтобы псевдоэлементы позиционировались относительно контейнера */
+// }
+
+// .container::before {
+//   content: "";
+//   position: absolute;
+//   z-index: -2;
+//   top: -10px; /* расстояние рамки от верхней границы */
+//   left: -10px; /* расстояние рамки от левой границы */
+//   right: -10px; /* расстояние рамки от правой границы */
+//   height: 10px; /* толщина рамки */
+//   background-color: #ff0000; /* цвет рамки */
+// }
+
+// .container::after {
+//   content: "";
+//   position: absolute;
+//   z-index: -2;
+//   bottom: -10px; /* расстояние рамки от нижней границы */
+//   left: -10px; /* расстояние рамки от левой границы */
+//   right: -10px; /* расстояние рамки от правой границы */
+//   height: 10px; /* толщина рамки */
+//   background-color: #ff0000; /* цвет рамки */
+// }
 
 .visually-hidden {
   position: absolute;

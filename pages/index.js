@@ -1,6 +1,7 @@
 import { Fragment } from "react";
 import Head from "next/head";
 import Hero from "../components/hero/hero";
+import PhonesList from "../components/phones/phones";
 
 function HomePage() {
   return (
@@ -10,6 +11,7 @@ function HomePage() {
         <meta name="description" content="" />
       </Head>
       <Hero />
+      <PhonesList />
     </Fragment>
   );
 }

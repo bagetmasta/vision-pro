@@ -2,15 +2,27 @@ import Image from "next/image";
 
 function Hero() {
   return (
-    <section>
+    <section className="hero">
       <h1>
         Elevating Life
-        <span>
-          <Image />
+        <span className="first-item">
+          <Image
+            src="/images/hero/rectangle1.png"
+            className="first-item-image"
+            alt="item"
+            width={135}
+            height={53}
+          />
         </span>
         to Pro-Level Precision
-        <span>
-          <Image />
+        <span className="second-item">
+          <Image
+            src="/images/hero/rectangle2.png"
+            className="second-item-image"
+            alt="item"
+            width={93}
+            height={53}
+          />
         </span>
         with Vision Pro
       </h1>

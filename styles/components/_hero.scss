@@ -1,0 +1,27 @@
+.hero {
+  position: relative;
+}
+
+.first-item,
+.second-item {
+  display: block;
+}
+
+.first-item {
+  background: url("/images/hero/item1.png") no-repeat left -5px;
+}
+
+.second-item {
+  background: url("/images/hero/item2.png") no-repeat;
+}
+
+.first-item-image {
+  position: relative;
+  left: 2%;
+}
+
+.second-item-image {
+  position: relative;
+  left: 15%;
+  top: 4px;
+}
