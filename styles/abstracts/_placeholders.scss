@@ -1,0 +1,12 @@
+%decorative-background-for-input {
+  border-radius: 12px;
+  border: 1px solid #fff;
+  background: rgba(31, 30, 30, 0.36);
+  backdrop-filter: blur(8px);
+}
+
+%decorative-background-for-title {
+  background: $radial-gradient;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
