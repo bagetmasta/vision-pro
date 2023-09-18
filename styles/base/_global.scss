@@ -5,35 +5,34 @@
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding: 15px;
 
-  @media screen and (min-width: 480px) {
+  @include media(mobile) {
     width: 480px;
   }
 
-  @media screen and (min-width: 768px) {
+  @include media(big-tablet) {
     width: 768px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @include media(mini-desktop) {
     width: 1200px;
   }
 
-  @media screen and (min-width: 1440px) {
+  @include media(big-desktop) {
     width: 1320px;
   }
 }
 
-.container-wrapper::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: -83%;
-  left: 0;
-  background: url("/images/header/portrait.png") no-repeat right / contain;
-}
+// .container-wrapper::before {
+//   content: "";
+//   position: absolute;
+//   top: 0;
+//   right: 0;
+//   bottom: -83%;
+//   left: 0;
+//   background: url("/images/header/portrait.png") no-repeat right / contain;
+// }
 
 // .container {
 //   position: relative; /* Это нужно, чтобы псевдоэлементы позиционировались относительно контейнера */
