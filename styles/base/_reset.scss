@@ -5,8 +5,9 @@
 
 html,
 body {
-  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-  background: #fafafa;
+  font-family: $font-family;
+  color: $primary-text-color;
+  background: $bcg-color;
 }
 
 a {
