@@ -3,22 +3,22 @@ import Image from "next/image";
 function Hero() {
   return (
     <section className="hero">
-      <h1>
+      <h1 className="hero__title">
         Elevating Life
-        <span className="first-item">
+        <span className="hero__first-item">
           <Image
             src="/images/hero/rectangle1.png"
-            className="first-item-image"
+            className="hero__first-item-image"
             alt="item"
             width={135}
             height={53}
           />
         </span>
         to Pro-Level Precision
-        <span className="second-item">
+        <span className="hero__second-item">
           <Image
             src="/images/hero/rectangle2.png"
-            className="second-item-image"
+            className="hero__second-item-image"
             alt="item"
             width={93}
             height={53}

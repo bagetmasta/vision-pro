@@ -1,26 +1,34 @@
 .hero {
   position: relative;
+  padding-top: 40px;
 }
 
-.first-item,
-.second-item {
+.hero__title {
+  font-weight: 600;
+
+  @extend %decorative-background-for-title;
+}
+
+.hero__first-item,
+.hero__second-item {
   display: block;
+  padding: 5px;
 }
 
-.first-item {
-  background: url("/images/hero/item1.png") no-repeat left -5px;
+.hero__first-item {
+  background: url("/images/hero/item1.png") no-repeat 3px -1px;
 }
 
-.second-item {
+.hero__second-item {
   background: url("/images/hero/item2.png") no-repeat;
 }
 
-.first-item-image {
+.hero__first-item-image {
   position: relative;
   left: 2%;
 }
 
-.second-item-image {
+.hero__second-item-image {
   position: relative;
   left: 15%;
   top: 4px;
