@@ -26,13 +26,15 @@ function Hero() {
         </span>
         with Vision Pro
       </h1>
-      <p>
+      <p className="hero__text">
         With Vision Pro, you have an infinite canvas that transforms how you use
         the apps you love. Arrange apps anywhere and scale them to the perfect
         size, making the workspace of your dreams a reality — all while staying
         present in the world around you
       </p>
-      <button type="button">Pre-order Now</button>
+      <button type="button" className="hero__button">
+        Pre-order Now
+      </button>
     </section>
   );
 }

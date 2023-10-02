@@ -10,13 +10,13 @@
 }
 
 .header__nav-item:not(:last-child) {
-  @include media(mini-desktop, max) {
+  @include media(laptop, max) {
     margin-bottom: 7px;
   }
 }
 
 .header__logo {
-  @include media(mini-desktop, max) {
+  @include media(laptop, max) {
     display: none;
   }
 }
@@ -34,7 +34,7 @@
 .search-form {
   position: relative;
 
-  @include media(mini-desktop, max) {
+  @include media(laptop, max) {
     margin-bottom: 10px;
   }
 }
@@ -56,7 +56,7 @@
 
   @extend %decorative-background-for-input;
 
-  @include media(mini-tablet, max) {
+  @include media(mobileL, max) {
     width: 160px;
   }
 }

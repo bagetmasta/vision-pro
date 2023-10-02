@@ -7,19 +7,19 @@
   margin-right: auto;
   padding: 15px;
 
-  @include media(mobile) {
+  @include media(mobileXL) {
     width: 480px;
   }
 
-  @include media(big-tablet) {
+  @include media(tablet) {
     width: 768px;
   }
 
-  @include media(mini-desktop) {
+  @include media(laptop) {
     width: 1200px;
   }
 
-  @include media(big-desktop) {
+  @include media(desktop) {
     width: 1320px;
   }
 }

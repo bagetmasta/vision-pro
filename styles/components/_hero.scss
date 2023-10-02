@@ -5,6 +5,7 @@
 
 .hero__title {
   font-weight: 600;
+  margin-bottom: 30px;
 
   @extend %decorative-background-for-title;
 }
@@ -25,11 +26,65 @@
 
 .hero__first-item-image {
   position: relative;
-  left: 2%;
+  left: 3%;
+
+  @include media(tablet, min) {
+    left: 1%;
+  }
+
+  @include media(desktop, min) {
+    left: 0.7%;
+  }
 }
 
 .hero__second-item-image {
   position: relative;
-  left: 15%;
-  top: 4px;
+  left: 21%;
+  top: 1px;
+
+  @include media(mobileL, min) {
+    left: 16%;
+  }
+
+  @include media(mobileXL, min) {
+    left: 14%;
+  }
+
+  @include media(tablet, min) {
+    left: 8%;
+  }
+
+  @include media(laptop, min) {
+    left: 5%;
+  }
+
+  @include media(desktop, min) {
+    left: 4.7%;
+  }
+}
+
+.hero__text {
+  line-height: 137.5%;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+
+.hero__button {
+  display: flex;
+  height: 48px;
+  padding: 0px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  border-radius: 12px;
+  background-color: $secondary-text-color;
+  border: 1px solid #fff;
+
+  box-shadow: 0px 4px 24px -4px rgba(0, 0, 0, 0.16);
+
+  color: $btn-text-color;
+  font-weight: 500;
+  line-height: 137.5%;
+  text-transform: capitalize;
 }

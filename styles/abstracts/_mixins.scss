@@ -1,54 +1,60 @@
 @mixin media($type, $direction: min) {
-  $mobile: 480px;
-  $mini-tablet: 425px;
-  $big-tablet: 768px;
-  $mini-desktop: 1024px;
-  $big-desktop: 1440px;
+  $mobileL: 425px;
+  $mobileXL: 480px;
+  $tablet: 768px;
+  $laptop: 1024px;
+  $desktop: 1440px;
 
-  @if $type == "mobile" and $direction == "min" {
-    @media screen and (min-width: $mobile) {
+  @if $type == "mobileL" and $direction == "min" {
+    @media screen and (min-width: $mobileL) {
       @content;
     }
   }
 
-  @if $type == "mini-tablet" and $direction == "max" {
-    @media screen and (max-width: ($mini-tablet - 0.02px)) {
+  @if $type == "mobileL" and $direction == "max" {
+    @media screen and (max-width: ($mobileL - 0.02px)) {
+      @content;
+    }
+  }
+
+  @if $type == "mobileXL" and $direction == "min" {
+    @media screen and (min-width: $mobileXL) {
       @content;
     }
   }
 
   @if $type == "tablet" and $direction == "min" {
-    @media screen and (min-width: $big-tablet) {
+    @media screen and (min-width: $tablet) {
       @content;
     }
   }
 
   @if $type == "tablet" and $direction == "max" {
-    @media screen and (max-width: ($big-tablet - 0.02px)) {
+    @media screen and (max-width: ($tablet - 0.02px)) {
       @content;
     }
   }
 
-  @if $type == "mini-desktop" and $direction == "min" {
-    @media screen and (min-width: $mini-desktop) {
+  @if $type == "laptop" and $direction == "min" {
+    @media screen and (min-width: $laptop) {
       @content;
     }
   }
 
-  @if $type == "mini-desktop" and $direction == "max" {
-    @media screen and (max-width: ($mini-desktop - 0.02px)) {
+  @if $type == "laptop" and $direction == "max" {
+    @media screen and (max-width: ($laptop - 0.02px)) {
       @content;
     }
   }
 
-  @if $type == "big-desktop" and $direction == "min" {
-    @media screen and (min-width: $big-desktop) {
+  @if $type == "desktop" and $direction == "min" {
+    @media screen and (min-width: $desktop) {
       @content;
     }
   }
 
-  @if $type == "big-desktop" and $direction == "max" {
-    @media screen and (max-width: ($big-desktop - 0.02px)) {
+  @if $type == "desktop" and $direction == "max" {
+    @media screen and (max-width: ($desktop - 0.02px)) {
       @content;
     }
   }
