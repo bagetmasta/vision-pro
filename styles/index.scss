@@ -1,4 +1,7 @@
+@import "./abstracts/variables";
+@import "./abstracts/mixins";
 @import "./base/global";
 @import "./base/reset";
+@import "./abstracts/placeholders";
 @import "./components/header";
 @import "./components/hero";
