@@ -2,9 +2,9 @@ import ProductItem from "../product-item/product-item";
 
 function IPhoneList({ products }) {
   return (
-    <section>
-      <h2>
-        Get Your <span>iPhone</span>
+    <section className="iPhone">
+      <h2 className="iPhone__title">
+        Get Your <span className="iPhone__title-bold">iPhone</span>
       </h2>
       <button type="button">See All</button>
       <ul>

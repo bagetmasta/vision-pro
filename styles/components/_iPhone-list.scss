@@ -1,0 +1,18 @@
+.iPhone {
+  background: linear-gradient(
+      0deg,
+      #f2f2f2 -4.55%,
+      rgba(242, 242, 242, 0) 228.03%
+    ),
+    url(<path-to-image>), lightgray 50% / cover no-repeat, #f2f2f2;
+}
+
+.iPhone__title {
+  // font-size: 36px;
+  font-weight: 400;
+  color: $secondary-text-color;
+}
+
+.iPhone__title-bold {
+  @extend %bold-font-for-title;
+}
